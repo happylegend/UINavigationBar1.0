@@ -43,14 +43,16 @@
     NSArray *array = [NSArray arrayWithObjects:@"牛排", @"大虾", nil];
     UISegmentedControl *segControl = [[UISegmentedControl alloc] initWithItems:array];
     segControl.segmentedControlStyle = UISegmentedControlSegmentCenter;
-    navigationItem.titleView = segControl;    
+    navigationItem.titleView = segControl;
     
-    //把导航栏集合添加入导航栏中，设置动画关闭
-    [navigationBar pushNavigationItem:navigationItem animated:YES];
+    
     
     //把左右两个按钮添加入导航栏集合中
     [navigationItem setLeftBarButtonItem:leftButton];
     [navigationItem setRightBarButtonItem:rightButton];
+    
+    //把导航栏集合添加入导航栏中，设置动画关闭
+    [navigationBar pushNavigationItem:navigationItem animated:NO];
     
     //把导航栏添加到视图中
     [self.view addSubview:navigationBar];
