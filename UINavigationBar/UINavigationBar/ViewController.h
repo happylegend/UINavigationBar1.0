@@ -17,7 +17,7 @@
  导航栏的一般使用方式是，
  第一：创建一个Navigation bar
  第二：创建一个Navigation item
- 第三：设置Navigation item的各个条目，比如leftbuttonitem，title，titleview，backbuttonitem，rightbuttonitem
+ 第三：设置Navigation item的各个条目，比如leftbarbuttonitem，title，titleview，backbarbuttonitem，rightbarbuttonitem，backitem，topitem
  第四：将Navigation item显示在Navigation bar上，使用push函数
  */
 
